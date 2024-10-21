@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SujiKalyan Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-4">
+    <!-- Header Section -->
+    <h1 class="text-4xl font-bold mb-8 text-blue-600">Welcome to SujiKalyan Home</h1>
+    
+    <!-- Family Member Blocks -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+        <!-- Kalyan Block -->
+        <div class="bg-white p-4 shadow-lg rounded-lg hover:bg-blue-50 transition duration-300">
+            <h2 class="text-xl font-bold text-gray-800">Kalyan Talagadadeevi</h2>
+            <p class="text-gray-500">Father <span class="cursor-pointer text-blue-600" onclick="showInfo('father')">(To know more)</span></p>
+            <p id="father-info" class="hidden text-gray-700 mt-2">Works as a Software Developer in AllCargo Logistics (GATI).</p>
+        </div>
+        <!-- Sujatha Block -->
+        <div class="bg-white p-4 shadow-lg rounded-lg hover:bg-blue-50 transition duration-300">
+            <h2 class="text-xl font-bold text-gray-800">Sujatha Talagadadeevi</h2>
+            <p class="text-gray-500">Mother <span class="cursor-pointer text-blue-600" onclick="showInfo('mother')">(To know more)</span></p>
+            <p id="mother-info" class="hidden text-gray-700 mt-2">Works as a HOD (Art Department) in Deccan Springs Global School & Fashion Designer.</p>
+        </div>
+        <!-- Priya Block -->
+        <div class="bg-white p-4 shadow-lg rounded-lg hover:bg-blue-50 transition duration-300">
+            <h2 class="text-xl font-bold text-gray-800">Priya Talagadadeevi</h2>
+            <p class="text-gray-500">Daughter <span class="cursor-pointer text-blue-600" onclick="showInfo('daughter')">(To know more)</span></p>
+            <p id="daughter-info" class="hidden text-gray-700 mt-2">Works as a Software Developer in Suitefy Cloud Systems (ORACLE).</p>
+        </div>
+        <!-- Yashwanth Block -->
+        <div class="bg-white p-4 shadow-lg rounded-lg hover:bg-blue-50 transition duration-300">
+            <h2 class="text-xl font-bold text-gray-800">Yashwanth Talagadadeevi</h2>
+            <p class="text-gray-500">Son <span class="cursor-pointer text-blue-600" onclick="showInfo('son')">(To know more)</span></p>
+            <p id="son-info" class="hidden text-gray-700 mt-2">Studying BTech Degree in Geethanjali College of Engineering and Technology.</p>
+        </div>
+    </div>
+    
+    <!-- Contact Information -->
+    <div class="text-center mb-8">
+        <p class="text-lg">Contact / Whatsapp: <a href="tel:+916281998811" class="text-blue-600">+91 6281998811</a></p>
+    </div>
+    
+    <!-- Note Section -->
+    <div class="bg-yellow-100 p-4 rounded-lg mb-8 max-w-xl text-center">
+        <p class="text-gray-800">Come into our home with an empty stomach... because we won't let you leave without filling it with our delicious food.</p>
+    </div>
+    
+    <!-- Thank You Note -->
+    <h2 class="text-3xl font-bold text-green-600">Thank You.</h2>
+    
+    <!-- JavaScript for Interactivity -->
+    <script>
+        function showInfo(person) {
+            const infoElement = document.getElementById(`${person}-info`);
+            infoElement.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
